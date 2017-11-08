@@ -1,0 +1,18 @@
+<div class="well">
+  <a routerLink="/lugares">Lugares / </a> Crear Lugar
+</div>
+<div class="container">
+  <label>Nombre</label>
+  <input type="text" class="form-control" [(ngModel)]="lugar.nombre">
+  <label>Distancia</label>
+  <input type="number" class="form-control" [(ngModel)]="lugar.distancia">
+  <label>Cercania</label>
+  <input type="number" class="form-control" [(ngModel)]="lugar.cercania">
+  <label>Descripción</label>
+  <textarea class="form-control" [(ngModel)]="lugar.descriptions"></textarea>
+  <label>Plan</label>
+  <input type="text" class="form-control" [(ngModel)]="lugar.plan">
+  <hr>
+  <a class="btn btn-primary" (click)="guardarLugar()"> Enviar</a>
+  <a routerLink="/lugares" class="btn btn-default">Cancelar</a>
+</div>
